@@ -68,11 +68,6 @@
     <span>Shop Now</span>
   </a>
 </li>
-                        <li>
-  <a href="https://www.thekada.com" class="shop-now-btn" target="_blank" rel="noopener noreferrer">
-    <span>Shop Now</span>
-  </a>
-</li>
                                             </ul>
                     <div class="nav-toggle d-lg-none ms-auto me-3">
                         <span></span>
@@ -363,23 +358,40 @@
                         <div class="text">
                             تلقي آخر الأخبار والتحديثات وغيرها الكثير أخبار كل أسبوع
                         </div>
-                        <form method="post" action="https://thekada.com/newsletter/subscribe">
-                            <input type="hidden" name="_token" value="CTcI3CCVxeoJO7PfiAmLmFU2zvmTbRpppDvToiOM" autocomplete="off">                            <div class="input--grp">
-                                <input type="email" name="email" required="" class="form-control" placeholder="Enter your email address">
-                                <button class="search-btn" type="submit">
-                                    <svg width="46" height="46" viewbox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="46" height="46" rx="23" fill="url(#paint0_linear_28_1864)"></rect>
-                                        <path d="M25.9667 22.997L19.3001 29.2222C19.1353 29.3866 18.8556 29.6667 18.8556 29.6667C18.8556 29.6667 18.691 30.0553 18.8558 30.22L19.3803 30.7443C19.5448 30.9092 19.7648 31 19.9992 31C20.2336 31 20.4533 30.9092 20.618 30.7443L27.7448 23.6176C27.9101 23.4524 28.0006 23.2317 28 22.997C28.0006 22.7613 27.9102 22.5408 27.7448 22.3755L20.6246 15.2557C20.46 15.0908 20.2403 15 20.0057 15C19.7713 15 19.5516 15.0908 19.3868 15.2557L18.8624 15.78C18.5212 16.1212 19.0456 16.4367 19.3868 16.7778L25.9667 22.997Z" fill="white"></path>
-                                        <defs>
-                                            <lineargradient id="paint0_linear_28_1864" x1="-2.04694e-07" y1="23.4694" x2="47.5207" y2="23.4694" gradientunits="userSpaceOnUse">
-                                                <stop stop-color="#34DD8E"></stop>
-                                                <stop offset="1" stop-color="#00D571"></stop>
-                                            </lineargradient>
-                                        </defs>
-                                    </svg>
-                                </button>
-                            </div>
-                        </form>
+                        <button class="go-to-shop-btn" onclick="window.location.href='https://www.thekada.com'">
+  Go to Shop
+  <svg width="24" height="24" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-left: 8px;">
+    <rect width="46" height="46" rx="23" fill="url(#paint0_linear)"></rect>
+    <path d="M25.9667 22.997L19.3001 29.2222C19.1353 29.3866 18.8556 29.6667 18.8556 29.6667C18.8556 29.6667 18.691 30.0553 18.8558 30.22L19.3803 30.7443C19.5448 30.9092 19.7648 31 19.9992 31C20.2336 31 20.4533 30.9092 20.618 30.7443L27.7448 23.6176C27.9101 23.4524 28.0006 23.2317 28 22.997C28.0006 22.7613 27.9102 22.5408 27.7448 22.3755L20.6246 15.2557C20.46 15.0908 20.2403 15 20.0057 15C19.7713 15 19.5516 15.0908 19.3868 15.2557L18.8624 15.78C18.5212 16.1212 19.0456 16.4367 19.3868 16.7778L25.9667 22.997Z" fill="white"></path>
+    <defs>
+      <linearGradient id="paint0_linear" x1="0" y1="23.4694" x2="47.5207" y2="23.4694" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#34DD8E" />
+        <stop offset="1" stop-color="#00D571" />
+      </linearGradient>
+    </defs>
+  </svg>
+</button>
+
+<style>
+  .go-to-shop-btn {
+    background: linear-gradient(90deg, #34DD8E 0%, #0a20e9 100%);
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 28px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 213, 113, 0.5);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  .go-to-shop-btn:hover {
+    background: linear-gradient(90deg, #0a20e9 0%, #34DD8E 100%);
+    transform: scale(1.05);
+  }
+</style>
                     </div>
                 </div>
             </div>
