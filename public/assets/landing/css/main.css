@@ -408,15 +408,15 @@
   stop-color: var(--base-2);
 }
 
-*[stroke="#04B061"] {
+*[stroke="#0e28d2"] {
   stroke: var(--base-2);
 }
 
-*[fill="#04B061"] {
+*[fill="#0e28d2"] {
   fill: var(--base-2);
 }
 
-*[stop-color="#04B061"] {
+*[stop-color="#0e28d2"] {
   stop-color: rgba(var(--base-rgb), 0.2);
 }
 
@@ -1702,7 +1702,7 @@ header.active::after {
   font-size: 16px;
   font-weight: 600;
   color: #fff;
-  background-color: #2b2fff;
+  background-color: #fff;
   border-radius: 50px;
   text-transform: uppercase;
   overflow: hidden;
