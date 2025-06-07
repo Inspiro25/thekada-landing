@@ -118,31 +118,140 @@
             </button>
          </div>
          <style>
-            .button-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 5vh; /* Full viewport height */
-            }
-            .go-to-shop-btn {
-            background: linear-gradient(90deg, #34DD8E 0%, #0a20e9 100%);
-            border: none;
-            color: white;
-            padding: 12px 32px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            border-radius: 28px;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            box-shadow: 0 4px 12px rgba(0, 213, 113, 0.5);
-            transition: background 0.3s ease, transform 0.2s ease;
-            }
-            .go-to-shop-btn:hover {
-            background: linear-gradient(90deg, #0a20e9 0%, #34DD8E 100%);
-            transform: scale(1.05);
-            }
-         </style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff;
+    color: #333;
+  }
+
+  .navbar-bottom {
+    background: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }
+
+  .navbar-bottom-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .menu li a.active {
+    color: #005aff;
+  }
+
+  .banner-section {
+    background: linear-gradient(to bottom, #d8efff 0%, #ffffff 100%);
+    padding: 60px 20px 30px;
+    text-align: center;
+  }
+
+  .banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+
+  .go-to-shop-btn {
+    background: linear-gradient(90deg, #00d4ff, #005aff);
+    border: none;
+    color: white;
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 999px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .go-to-shop-btn:hover {
+    transform: scale(1.05);
+  }
+
+  .free-delivery {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 12px;
+  }
+
+  .banner-svg-img {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner-svg-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+
+    .title {
+      font-size: 1.8rem;
+    }
+
+    .text {
+      font-size: 1rem;
+    }
+
+    .go-to-shop-btn {
+      font-size: 0.95rem;
+      padding: 12px 24px;
+    }
+
+    .banner-svg-img {
+      margin-top: 20px;
+    }
+
+    .banner-svg-img img {
+      width: 90%;
+    }
+  }
+</style>
       </div>
       <div class="px-xl-5 d-flex justify-content-center text-base banner-svg-img">
          <img src="public/assets/landing/img/main-banner.svg" class="svg" alt="">
